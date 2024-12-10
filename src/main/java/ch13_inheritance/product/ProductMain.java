@@ -14,13 +14,18 @@ public class ProductMain {
         // 이 상품은 일반 상품입니다.
         // 이 상품은 일반 카테고리입니다. -> getter 를 활용하여 해당 출력문이 콘솔에 나오도록 작성하시오
                                         //  -> ProductMain 에 작성하시오.
-        System.out.println("이 상품은 " + item1.getName() + "입니다.");
-        System.out.println("이 상품은 " + item1.getCategory() + "입니다.");
+//        System.out.println("이 상품은 " + item1.getName() + "입니다.");
+//        System.out.println("이 상품은 " + item1.getCategory() + "입니다.");
 
         // 과제
-        // Product 객체를 생성하시오.
-        // 전자제품, 가전, 100000, 10으로 설정하고 displayInfo() 를 통해서 정보를 출력하시오
-
+        // Product1 객체를 생성하시오.
+        // 전자 제품, 가전, 100000, 10으로 설정하고 displayInfo() 를 통해서 정보를 출력하시오
+        Product product1 = new Product("전자 제품","가전",100000,10);
+        System.out.println();
+        product1.displayInfo();     // 서브 클래스의 고유 메서드
+        System.out.println();
         //product1 의 이름을 "가전 제품" 으로 바꾸고, getName 을 통해서 바뀐 것을 콘솔창에 출력하시오
+        product1.setName("가전 제품");      // 슈퍼 클래스의 메서드
+        System.out.println(product1.getName()); // 슈퍼 클래스의 메서드
     }
 }

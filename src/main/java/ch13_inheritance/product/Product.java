@@ -59,7 +59,7 @@ public class Product extends Item{
     }
 
     public  void displayInfo(){
-        System.out.println("제품명 : " + getName() + "\n 카테고리 : " + getCategory());
-        System.out.println("가격 : " + getPrice() + "\n 재고 : " + getStock());
+        System.out.println("제품명 : " + getName() + "\n카테고리 : " + getCategory());
+        System.out.println("가격 : " + getPrice() + "\n재고 : " + getStock());
     }
 }
