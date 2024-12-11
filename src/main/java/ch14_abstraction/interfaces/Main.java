@@ -59,12 +59,12 @@ public class Main {
         remoteController.onPressedPowerButton();
 
         System.out.println();
-
+        // 채널 내리는 버튼
         remoteController.onDownChannelDownButton();
         remoteController.onPressedDownButton();
 
         System.out.println();
-
+        // 채널 올리는 버튼
         remoteController.onUpChannelUpButton();
         remoteController.onPressedUpButton();
 
@@ -76,6 +76,24 @@ public class Main {
         3. RemoteCOntroller.java 의 AllArgsConstructor 를 만족하기 위해 생성자를 수정하시오.
         4. VolumeDownButton, VolumeUpButton 에 있는 메서드들을 RemoteController.java 에 재구현하시오.
         5. Main 으로 넘어와서 볼륨 한칸 내리기, 계속 내리기, 한 칸 올리기, 계속 올리기를 구현하시오.
+
+        추가 과제
+
+        온도 조절 버튼과 에어컨 리모컨 구현하기
+        TemperatureDownButton, TemperatureUpButton, AirConditionerController.java 클래스들을 만들어서
+        Main 에 AirConditionerController 의 객체를 생성 한 후, Main 을 실행시키시오.
+
+        실행 예
+
+        전원이 켜졌습니다.
+        전원이 꺼졌습니다.
+
+        온도를 한 칸 내립니다.
+        온도를 계속 내립니다.
+
+        온도를 한 칸 올립니다.
+        온도를 계속 올립니다.
+
      */
 
         // 볼륨 올리는 코드
@@ -84,7 +102,7 @@ public class Main {
 
         System.out.println();
         // 볼륨 내리는 코드
-        remoteController.onPressedDownButton();
+        remoteController.onPressedDownVolume();
         remoteController.onDownVolumeButton();
 
         System.out.println();
