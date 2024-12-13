@@ -43,13 +43,13 @@ public class Teacher {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        ch16_object_classes.Teacher teacher = (ch16_object_classes.Teacher) o;
-        return Objects.equals(getName(), teacher.getName()) && Objects.equals(getSchoolName(), teacher.getSchoolName());
+        Teacher teacher = (Teacher) o;
+        return Objects.equals(name, teacher.name) && Objects.equals(schoolName, teacher.schoolName);
     }
 
     // hashCode Override 정의
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getSchoolName());
+        return Objects.hash(name, schoolName);
     }
 }
